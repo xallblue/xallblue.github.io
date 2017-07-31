@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>归档: 2017 | Blog of Xsu Albert</title>
+  <title>在Android/LinuxDeploy Debian上安装hexo的坑 | Blog of Xsu Albert</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="My own blog,records of my study and thoughts">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Blog of Xsu Albert">
-<meta property="og:url" content="http://xallblue.github.io/archives/2017/index.html">
+  <meta name="description" content="要注意版本在Android/LinuxDeploy Debian上安装hexo之前，先要看一下nodejs和npm的版本是不是偏旧。如果是用系统自带的安装sudo apt-get install nodejs npm，用node -v看一下版本，应该是0.10版的，需要更新为目前的6.x。到官网上下载最新的binary文件，比如下载下来的文件是node-v6.9.1-linux-armv7.tar">
+<meta name="keywords" content="安装nodejs npm hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在Android&#x2F;LinuxDeploy Debian上安装hexo的坑">
+<meta property="og:url" content="http://xallblue.github.io/2017/07/31/How-to-install-Hexo-in-Android-LinuxDeploy-Debian/index.html">
 <meta property="og:site_name" content="Blog of Xsu Albert">
-<meta property="og:description" content="My own blog,records of my study and thoughts">
+<meta property="og:description" content="要注意版本在Android/LinuxDeploy Debian上安装hexo之前，先要看一下nodejs和npm的版本是不是偏旧。如果是用系统自带的安装sudo apt-get install nodejs npm，用node -v看一下版本，应该是0.10版的，需要更新为目前的6.x。到官网上下载最新的binary文件，比如下载下来的文件是node-v6.9.1-linux-armv7.tar">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-07-31T15:41:27.948Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Blog of Xsu Albert">
-<meta name="twitter:description" content="My own blog,records of my study and thoughts">
+<meta name="twitter:title" content="在Android&#x2F;LinuxDeploy Debian上安装hexo的坑">
+<meta name="twitter:description" content="要注意版本在Android/LinuxDeploy Debian上安装hexo之前，先要看一下nodejs和npm的版本是不是偏旧。如果是用系统自带的安装sudo apt-get install nodejs npm，用node -v看一下版本，应该是0.10版的，需要更新为目前的6.x。到官网上下载最新的binary文件，比如下载下来的文件是node-v6.9.1-linux-armv7.tar">
   
     <link rel="alternate" href="/atom.xml" title="Blog of Xsu Albert" type="application/atom+xml">
   
@@ -63,77 +65,57 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/07/31/How-to-install-Hexo-in-Android-LinuxDeploy-Debian/" class="archive-article-date">
-  <time datetime="2017-07-31T10:58:12.000Z" itemprop="datePublished">7月 31</time>
+        <section id="main"><article id="post-How-to-install-Hexo-in-Android-LinuxDeploy-Debian" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/31/How-to-install-Hexo-in-Android-LinuxDeploy-Debian/" class="article-date">
+  <time datetime="2017-07-31T10:58:12.000Z" itemprop="datePublished">2017-07-31</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/31/How-to-install-Hexo-in-Android-LinuxDeploy-Debian/">在Android/LinuxDeploy Debian上安装hexo的坑</a>
+    <h1 class="article-title" itemprop="name">
+      在Android/LinuxDeploy Debian上安装hexo的坑
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/07/31/simple-tutorials-of-MarkDown/" class="archive-article-date">
-  <time datetime="2017-07-31T01:25:15.000Z" itemprop="datePublished">7月 31</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/31/simple-tutorials-of-MarkDown/">simple tutorials of MarkDown</a>
-    </h1>
-  
+        <p><strong>要注意版本</strong><br>在Android/LinuxDeploy Debian上安装hexo之前，先要看一下nodejs和npm的版本是不是偏旧。<br>如果是用系统自带的安装sudo apt-get install nodejs npm，用node -v看一下版本，应该是0.10版的，需要更新为目前的6.x。<br>到官网上下载最新的binary文件，比如下载下来的文件是node-v6.9.1-linux-armv7.tar.xz，而对于.tar.xz的文件解压方法如下：</p>
+<blockquote>
+<p>xz -d node-v6.9.1-linux-armv7.tar.xz<br>这个命令运行之后，node-v6.9.1-linux-armv7.tar.xz变为了node-v6.9.1-linux-armv7.tar，之后再用<br>tar -xvf node-v6.9.1-linux-armv7.tar<br>运行上述命令之后，就能生成一个node-v6.9.1-linux-armv7文件夹，解压成功。<br>sudo mv /usr/local/bin/node /usr/local/bin/node.bak<br>sudo ln -s /opt/node-v6.11.1-linux-a<br>sudo mv /usr/local/bin/npm /usr/local/bin/npm.bak<br>sudo ln -s /opt/node-v6.11.1-linux-armv7l/bin/npm /usr/local/bin/npm</p>
+</blockquote>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/07/31/hello-world/" class="archive-article-date">
-  <time datetime="2017-07-30T17:23:59.545Z" itemprop="datePublished">7月 31</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/31/hello-world/">Hello World</a>
-    </h1>
-  
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://xallblue.github.io/2017/07/31/How-to-install-Hexo-in-Android-LinuxDeploy-Debian/" data-id="cj5s1jxyn0004hps664mzq83u" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安装nodejs-npm-hexo/">安装nodejs npm hexo</a></li></ul>
 
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/07/31/simple-tutorials-of-MarkDown/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">simple tutorials of MarkDown</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         

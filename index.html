@@ -65,6 +65,48 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-How-to-install-Hexo-in-Android-LinuxDeploy-Debian" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/31/How-to-install-Hexo-in-Android-LinuxDeploy-Debian/" class="article-date">
+  <time datetime="2017-07-31T10:58:12.000Z" itemprop="datePublished">2017-07-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/31/How-to-install-Hexo-in-Android-LinuxDeploy-Debian/">在Android/LinuxDeploy Debian上安装hexo的坑</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>要注意版本</strong><br>在Android/LinuxDeploy Debian上安装hexo之前，先要看一下nodejs和npm的版本是不是偏旧。<br>如果是用系统自带的安装sudo apt-get install nodejs npm，用node -v看一下版本，应该是0.10版的，需要更新为目前的6.x。<br>到官网上下载最新的binary文件，比如下载下来的文件是node-v6.9.1-linux-armv7.tar.xz，而对于.tar.xz的文件解压方法如下：</p>
+<blockquote>
+<p>xz -d node-v6.9.1-linux-armv7.tar.xz<br>这个命令运行之后，node-v6.9.1-linux-armv7.tar.xz变为了node-v6.9.1-linux-armv7.tar，之后再用<br>tar -xvf node-v6.9.1-linux-armv7.tar<br>运行上述命令之后，就能生成一个node-v6.9.1-linux-armv7文件夹，解压成功。<br>sudo mv /usr/local/bin/node /usr/local/bin/node.bak<br>sudo ln -s /opt/node-v6.11.1-linux-a<br>sudo mv /usr/local/bin/npm /usr/local/bin/npm.bak<br>sudo ln -s /opt/node-v6.11.1-linux-armv7l/bin/npm /usr/local/bin/npm</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://xallblue.github.io/2017/07/31/How-to-install-Hexo-in-Android-LinuxDeploy-Debian/" data-id="cj5s1jxyn0004hps664mzq83u" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安装nodejs-npm-hexo/">安装nodejs npm hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-simple-tutorials-of-MarkDown" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/07/31/simple-tutorials-of-MarkDown/" class="article-date">
@@ -140,7 +182,7 @@
 </blockquote>
 <hr>
 <p><strong>自动链接</strong><br><em>尖括号</em><br><a href="http://ibruce.info" target="_blank" rel="external">http://ibruce.info</a></p>
-<p><a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#x62;&#117;&#46;&#114;&#117;&#x40;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;">&#x62;&#117;&#46;&#114;&#117;&#x40;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;</a></p>
+<p><a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#58;&#98;&#x75;&#x2e;&#114;&#x75;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;">&#98;&#x75;&#x2e;&#114;&#x75;&#64;&#113;&#113;&#x2e;&#x63;&#x6f;&#109;</a></p>
 <hr>
 <p><strong>代码：行内代码</strong><br><em>在第一行后指定编程语言，也可以不指定</em><br>val s = “hello Markdown”<br>println( s )</p>
 <hr>
@@ -150,7 +192,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://xallblue.github.io/2017/07/31/simple-tutorials-of-MarkDown/" data-id="cj5ryq4jl0000eys6szsrctgo" class="article-share-link">Share</a>
+      <a data-url="http://xallblue.github.io/2017/07/31/simple-tutorials-of-MarkDown/" data-id="cj5rh34g10001hps6jgf3q63z" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
@@ -197,7 +239,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://xallblue.github.io/2017/07/31/hello-world/" data-id="cj5ryq4mu0003eys69gh98t7w" class="article-share-link">Share</a>
+      <a data-url="http://xallblue.github.io/2017/07/31/hello-world/" data-id="cj5rguhao0000hps647ss9xl4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -219,7 +261,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安装nodejs-npm-hexo/">安装nodejs npm hexo</a></li></ul>
     </div>
   </div>
 
@@ -229,7 +271,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/markdown/" style="font-size: 10px;">markdown</a>
+      <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/安装nodejs-npm-hexo/" style="font-size: 10px;">安装nodejs npm hexo</a>
     </div>
   </div>
 
@@ -249,6 +291,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/07/31/How-to-install-Hexo-in-Android-LinuxDeploy-Debian/">在Android/LinuxDeploy Debian上安装hexo的坑</a>
+          </li>
         
           <li>
             <a href="/2017/07/31/simple-tutorials-of-MarkDown/">simple tutorials of MarkDown</a>
