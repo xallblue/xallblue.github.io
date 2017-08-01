@@ -5,18 +5,18 @@
   
   <title>在Android/LinuxDeploy Debian上安装hexo的坑 | Blog of Xsu Albert</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="要注意版本在Android/LinuxDeploy Debian上安装hexo之前，先要看一下nodejs和npm的版本是不是偏旧。如果是用系统自带的安装sudo apt-get install nodejs npm，用node -v看一下版本，应该是0.10版的，需要更新为目前的6.x。到官网上下载最新的binary文件，比如下载下来的文件是node-v6.9.1-linux-armv7.tar">
+  <meta name="description" content="要注意版本在Android/LinuxDeploy Debian上安装hexo之前，先要看一下nodejs和npm的版本是不是偏旧。如果是用系统自带的安装sudo apt-get install nodejs npm，用node -v看一下版本，应该是0.10版的，需要更新为目前的6.x。到官网上下载最新的binary文件，比如下载下来的文件是node-v6.11.1-linux-armv7l.t">
 <meta name="keywords" content="安装nodejs npm hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在Android&#x2F;LinuxDeploy Debian上安装hexo的坑">
 <meta property="og:url" content="http://xallblue.github.io/2017/07/31/How-to-install-Hexo-in-Android-LinuxDeploy-Debian/index.html">
 <meta property="og:site_name" content="Blog of Xsu Albert">
-<meta property="og:description" content="要注意版本在Android/LinuxDeploy Debian上安装hexo之前，先要看一下nodejs和npm的版本是不是偏旧。如果是用系统自带的安装sudo apt-get install nodejs npm，用node -v看一下版本，应该是0.10版的，需要更新为目前的6.x。到官网上下载最新的binary文件，比如下载下来的文件是node-v6.9.1-linux-armv7.tar">
+<meta property="og:description" content="要注意版本在Android/LinuxDeploy Debian上安装hexo之前，先要看一下nodejs和npm的版本是不是偏旧。如果是用系统自带的安装sudo apt-get install nodejs npm，用node -v看一下版本，应该是0.10版的，需要更新为目前的6.x。到官网上下载最新的binary文件，比如下载下来的文件是node-v6.11.1-linux-armv7l.t">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-07-31T15:41:27.948Z">
+<meta property="og:updated_time" content="2017-08-01T15:21:39.350Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在Android&#x2F;LinuxDeploy Debian上安装hexo的坑">
-<meta name="twitter:description" content="要注意版本在Android/LinuxDeploy Debian上安装hexo之前，先要看一下nodejs和npm的版本是不是偏旧。如果是用系统自带的安装sudo apt-get install nodejs npm，用node -v看一下版本，应该是0.10版的，需要更新为目前的6.x。到官网上下载最新的binary文件，比如下载下来的文件是node-v6.9.1-linux-armv7.tar">
+<meta name="twitter:description" content="要注意版本在Android/LinuxDeploy Debian上安装hexo之前，先要看一下nodejs和npm的版本是不是偏旧。如果是用系统自带的安装sudo apt-get install nodejs npm，用node -v看一下版本，应该是0.10版的，需要更新为目前的6.x。到官网上下载最新的binary文件，比如下载下来的文件是node-v6.11.1-linux-armv7l.t">
   
     <link rel="alternate" href="/atom.xml" title="Blog of Xsu Albert" type="application/atom+xml">
   
@@ -87,15 +87,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>要注意版本</strong><br>在Android/LinuxDeploy Debian上安装hexo之前，先要看一下nodejs和npm的版本是不是偏旧。<br>如果是用系统自带的安装sudo apt-get install nodejs npm，用node -v看一下版本，应该是0.10版的，需要更新为目前的6.x。<br>到官网上下载最新的binary文件，比如下载下来的文件是node-v6.9.1-linux-armv7.tar.xz，而对于.tar.xz的文件解压方法如下：</p>
-<blockquote>
-<p>xz -d node-v6.9.1-linux-armv7.tar.xz<br>这个命令运行之后，node-v6.9.1-linux-armv7.tar.xz变为了node-v6.9.1-linux-armv7.tar，之后再用<br>tar -xvf node-v6.9.1-linux-armv7.tar<br>运行上述命令之后，就能生成一个node-v6.9.1-linux-armv7文件夹，解压成功。<br>sudo mv /usr/local/bin/node /usr/local/bin/node.bak<br>sudo ln -s /opt/node-v6.11.1-linux-a<br>sudo mv /usr/local/bin/npm /usr/local/bin/npm.bak<br>sudo ln -s /opt/node-v6.11.1-linux-armv7l/bin/npm /usr/local/bin/npm</p>
-</blockquote>
+        <p><strong>要注意版本</strong><br>在Android/LinuxDeploy Debian上安装hexo之前，先要看一下nodejs和npm的版本是不是偏旧。<br>如果是用系统自带的安装sudo apt-get install nodejs npm，用node -v看一下版本，应该是0.10版的，需要更新为目前的6.x。<br>到官网上下载最新的binary文件，比如下载下来的文件是node-v6.11.1-linux-armv7l.tar.xz，而对于.tar.xz的文件解压方法如下：<br><em>xz -d node-v6.11.1-linux-armv7l.tar.xz</em><br>这个命令运行之后，node-v6.11.1-linux-armv7l.tar.xz变为了node-v6.11.1-linux-armv7l.tar，之后再用<br><em>tar -xvf node-v6.11.1-linux-armv7l.tar</em><br>运行上述命令之后，就能生成一个node-v6.11.1-linux-armv7l文件夹，解压成功，可以放在/opt下。<br>先备份一下原来的版本<br><em>sudo mv /usr/local/bin/node /usr/local/bin/node.bak</em><br><em>sudo mv /usr/local/bin/npm /usr/local/bin/npm.bak</em><br>方便起见，文件夹改个短名<br><em>sudo mv /opt/node-v6.11.1-linux-armv7l /opt/nodev6</em><br>建立符号链接<br><em>sudo ln -s /opt/nodev6/bin/node /usr/local/bin/node</em><br><em>sudo ln -s /opt/nodev6/bin/npm /usr/local/bin/npm</em><br>查看nodejs和npm版本正常，安装运行hexo<br><em>sudo npm install hexo-cli -g</em><br><em>hexo –version</em><br><em>hexo init blog</em><br><em>cd blog</em><br><em>npm install</em><br>可以生成新页面了，md文件放在source/_posts文件夹下面<br><em>hexo n “something”</em><br>编辑完后生成静态页面<br><em>hexo g</em><br>本地服务器查看一下<br><em>hexo s</em><br>发布到github上，需先编辑_config.yml文件，最后运行<br><em>hexo d</em></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://xallblue.github.io/2017/07/31/How-to-install-Hexo-in-Android-LinuxDeploy-Debian/" data-id="cj5s1jxyn0004hps664mzq83u" class="article-share-link">Share</a>
+      <a data-url="http://xallblue.github.io/2017/07/31/How-to-install-Hexo-in-Android-LinuxDeploy-Debian/" data-id="cj5sbr9qi0000bhs6p6d7lcos" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安装nodejs-npm-hexo/">安装nodejs npm hexo</a></li></ul>
