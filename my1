@@ -1,0 +1,55 @@
+    3  sudo apt-get update
+    4  sudo apt-get upgrade
+    7  sudo apt-get install python python-pip
+   12  sudo vi /etc/apt/sources.list
+   14  sudo vi /etc/vim/vimrc
+   17  sudo apt-get install git
+   19  npm install hexo-generator-index --save
+   20  npm install hexo-generator-archive --save
+   21  npm install hexo-generator-category --save
+   22  npm install hexo-generator-tag --save
+   23  npm install hexo-server --save
+   24  npm install hexo-deployer-git --save
+   71  node -v
+   72  npm -v
+   73  git --veraion
+   87  sudo xz -d /sdcard/Download/node-v6.11.1-linux-armv7l.tar.xz 
+   91  sudo tar -xvf node-v6.11.1-linux-armv7l.tar 
+   93  cp node-v6.11.1-linux-armv7l.tar ~/
+  100  ls -al /opt/
+  111  sudo cp /home/android/node-v6.11.1-linux-armv7l /opt/ -r
+  132  sudo ln -s /opt/node-v6.11.1-linux-armv7l/bin/node /usr/local/bin/node
+  145  sudo apt-get install nodejs-legacy
+  154  sudo mv /usr/local/bin/node /usr/local/bin/node.bak
+  155  sudo ln -s /opt/node-v6.11.1-linux-a
+  156  sudo mv /usr/local/bin/npm /usr/local/bin/npm.bak
+  157  sudo ln -s /opt/node-v6.11.1-linux-armv7l/bin/npm /usr/local/bin/npm
+  158  node -v
+  159  npm -v
+  160  /opt/node-v6.11.1-linux-armv7l/bin/npm -v
+  161  /opt/node-v6.11.1-linux-armv7l/bin/node -v
+  167  vi .profile 
+  168  cd blog
+  170  vi _config.yml 
+  179  npm install hexo-deployer-git --save
+  182  git config --global user.name "xallblue"
+  183  git config --global user.email "xallblue@163.com"
+  184  hexo deploy
+  187  vi .profile 
+  190  sudo mv /opt/node-v6.11.1-linux-armv7l /opt/nodev6
+  197  sudo rm /usr/local/bin/node
+  198  sudo rm /usr/local/bin/npm
+  199  sudo ln -s /opt/nodev6/bin/node /usr/local/bin/node
+  200  sudo ln -s /opt/nodev6/bin/npm /usr/local/bin/npm
+  201  node -v
+  202  npm -v
+  204  sudo npm install hexo-cli -g
+  208  hexo --version
+  209  hexo init blog
+  210  npm install
+  211  hexo g
+  213  cd blog
+  215  npm install
+  216  hexo g
+  217  hexo s
+  222  history>my1
