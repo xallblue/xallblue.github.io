@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="markdown," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="强调 星号与下划线都可以，单是斜体，双是粗体，符号可跨行，符号可加空格分割线三个或更多-_\，必须单独一行，可含空格*  引用翻译成html就是\\&amp;lt;\/blockquote&amp;gt;，符号后的空格可不要内层符号前的空格必须要  引用  引用中的引用     标题：Setext方式三个或更多 大标题小标题 标题：Atx方式** 一级标题二级标题三级标题四级标题五级标题六级标题 无序列表符号之后的空格">
+<meta name="keywords" content="markdown">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MarkDown语法简记">
+<meta property="og:url" content="http://xallblue.github.io/2017/07/31/simple-tutorials-of-MarkDown/index.html">
+<meta property="og:site_name" content="Blog of Xsu Albert">
+<meta property="og:description" content="强调 星号与下划线都可以，单是斜体，双是粗体，符号可跨行，符号可加空格分割线三个或更多-_\，必须单独一行，可含空格*  引用翻译成html就是\\&amp;lt;\/blockquote&amp;gt;，符号后的空格可不要内层符号前的空格必须要  引用  引用中的引用     标题：Setext方式三个或更多 大标题小标题 标题：Atx方式** 一级标题二级标题三级标题四级标题五级标题六级标题 无序列表符号之后的空格">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png">
+<meta property="og:image" content="http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png">
+<meta property="og:updated_time" content="2017-08-05T17:06:28.820Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MarkDown语法简记">
+<meta name="twitter:description" content="强调 星号与下划线都可以，单是斜体，双是粗体，符号可跨行，符号可加空格分割线三个或更多-_\，必须单独一行，可含空格*  引用翻译成html就是\\&amp;lt;\/blockquote&amp;gt;，符号后的空格可不要内层符号前的空格必须要  引用  引用中的引用     标题：Setext方式三个或更多 大标题小标题 标题：Atx方式** 一级标题二级标题三级标题四级标题五级标题六级标题 无序列表符号之后的空格">
+<meta name="twitter:image" content="http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://xallblue.github.io/2017/07/31/simple-tutorials-of-MarkDown/"/>
+
+
+
+
+
+  <title>MarkDown语法简记 | Blog of Xsu Albert</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog of Xsu Albert</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://xallblue.github.io/2017/07/31/simple-tutorials-of-MarkDown/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xsu Albert">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog of Xsu Albert">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">MarkDown语法简记</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-31T09:25:15+08:00">
+                2017-07-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong>强调</strong></p>
+<h2 id="星号与下划线都可以，单是斜体，双是粗体，符号可跨行，符号可加空格"><a href="#星号与下划线都可以，单是斜体，双是粗体，符号可跨行，符号可加空格" class="headerlink" title="星号与下划线都可以，单是斜体，双是粗体，符号可跨行，符号可加空格"></a><em>星号与下划线都可以，单是斜体，双是粗体，符号可跨行，符号可加空格</em></h2><p><strong>分割线</strong><br><em>三个或更多-_\</em>，必须单独一行，可含空格*</p>
+<hr>
+<p><strong>引用</strong><br><em>翻译成html就是\<blockquote\>\&lt;\/blockquote>，符号后的空格可不要</blockquote\></em><br><em>内层符号前的空格必须要</em></p>
+<blockquote>
+<p>引用</p>
+<blockquote>
+<p>引用中的引用</p>
+</blockquote>
+</blockquote>
+<hr>
+<hr>
+<p><strong>标题：Setext方式</strong><br><em>三个或更多</em></p>
+<h1 id="大标题"><a href="#大标题" class="headerlink" title="大标题"></a>大标题</h1><h2 id="小标题"><a href="#小标题" class="headerlink" title="小标题"></a>小标题</h2><hr>
+<p><strong>标题：Atx方</strong>式**</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><hr>
+<p><strong>无序列表</strong><br><em>符号之后的空格不能少，-+*效果一样，但不能混合使用，因混合是嵌套列表，内容可超长</em></p>
+<ul>
+<li>无序列表</li>
+<li>无序列表</li>
+<li>无序列表</li>
+</ul>
+<hr>
+<p><strong>有序列表</strong><br><em>数字不能省略但可无序，点号之后的空格不能少</em></p>
+<ol>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>有序列表</li>
+</ol>
+<hr>
+<p><strong>嵌套列表</strong><br><em>-+*可循环使用，但符号之后的空格不能少，符号之前的空格也不能少</em></p>
+<ul>
+<li>嵌套列表<ul>
+<li>嵌套列表</li>
+<li>嵌套列表</li>
+</ul>
+<ul>
+<li>嵌套列表<ul>
+<li>嵌套列表</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>嵌套列表</li>
+</ul>
+<hr>
+<p><strong>文字超链：Inline方式</strong><br><em>Tooltips可省略</em><br><a href="http://bruce-sha.github.io" title="不如的博客" target="_blank" rel="external">不如</a></p>
+<hr>
+<p><strong>图片超链</strong><br><em>多个感叹号，Tooltips可省略，要设置大小只能借助HTML标记</em><br><img src="http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Mark" title="GitHub Mark"></p>
+<hr>
+<p><strong>索引超链：Reference方式</strong><br><em>索引，1 2可以是任意字符</em><br><a href="http://bruce-sha.github.io" target="_blank" rel="external">不如</a><br><img src="http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png" alt="GitHub Octocat"></p>
+<hr>
+<p><strong>自动链接</strong><br><em>尖括号</em><br><a href="http://ibruce.info" target="_blank" rel="external">http://ibruce.info</a></p>
+<p><a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#98;&#117;&#x2e;&#x72;&#x75;&#64;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;">&#98;&#117;&#x2e;&#x72;&#x75;&#64;&#113;&#x71;&#x2e;&#99;&#111;&#x6d;</a></p>
+<hr>
+<p><strong>代码：行内代码</strong><br><em>在第一行后指定编程语言，也可以不指定</em><br>val s = “hello Markdown”<br>println( s )</p>
+<hr>
+<p>**代码：段落代码<br>每行文字前加4个空格或者1个Tab</p>
+<p>val s = “hello Markdown”<br>println( s )</p>
+<p><strong>段落、标题、区块代码</strong><br>一个段落是由一个以上的连接的行句组成，而一个以上的空行则会划分出不同的段落（空行的定义是显示上看起来像是空行，就被视为空行，例如有一行只有空白和tab，那该行也会被视为空行），一般的段落不需要用空白或换行缩进。<br>Markdown支持两种标题的语法，Setext和Atx形式。Setext形式是用底线的形式，利用\=（最高阶标题）和-（第二阶标题），Atx形式在行首插入1到6个#，对应到标题1到6阶。<br>区块引用则使用email形式的’>‘角括号。</p>
+<h1 id="A-First-Level-Header"><a href="#A-First-Level-Header" class="headerlink" title="A First Level Header"></a>A First Level Header</h1><h2 id="A-Second-Level-Header"><a href="#A-Second-Level-Header" class="headerlink" title="A Second Level Header"></a>A Second Level Header</h2><p>Now is the time for all good men to come to the aid of their country. This is just a regular paragraph.</p>
+<p>The quick brown fox jumped over the lazy dog’s back.</p>
+<h3 id="Header-3"><a href="#Header-3" class="headerlink" title="Header 3"></a>Header 3</h3><blockquote>
+<p>This is a blockquote.</p>
+<p>This is the second paragraph in the blockquote.</p>
+<h2 id="This-is-an-H2-in-a-blockquote"><a href="#This-is-an-H2-in-a-blockquote" class="headerlink" title="This is an H2 in a blockquote"></a>This is an H2 in a blockquote</h2></blockquote>
+<p>输出 HTML 为：</p>
+<p></p><h1>A First Level Header</h1><p></p>
+<p></p><h2>A Second Level Header</h2><p></p>
+<p>Now is the time for all good men to come to the aid of their country. This is just a regular paragraph.</p><br><p>The quick brown fox jumped over the lazy dog’s back.</p><br><h3>Header 3</h3><br><blockquote><br><p>This is a blockquote.</p><br><p>This is the second paragraph in the blockquote.</p><br><h2>This is an H2 in a blockquote</h2><br></blockquote><br><br><strong>修辞和强调</strong><br>Markdown 使用星号和底线来标记需要强调的区段。<br>Some of these words <em>are emphasized</em>.<br>Some of these words <em>are emphasized also</em>.<br>Use two asterisks for <strong>strong emphasis</strong>.<br>Or, if you prefer, <strong>use two underscores instead</strong>.<br><br>输出 HTML 为:<br><br><p>Some of these words <em>are emphasized</em>.<br>Some of these words <em>are emphasized also</em>.</p><br><p>Use two asterisks for <strong>strong emphasis</strong>.<br>Or, if you prefer, <strong>use two underscores instead</strong>.</p>
+
+<p>列表</p>
+<p>无序列表使用星号、加号和减号来做为列表的项目标记，这些符号是都可以使用的，使用星号：</p>
+<ul>
+<li>Candy.</li>
+<li>Gum.</li>
+<li>Booze.</li>
+</ul>
+<p>加号：</p>
+<ul>
+<li>Candy.</li>
+<li>Gum.</li>
+<li>Booze.</li>
+</ul>
+<p>和减号</p>
+<ul>
+<li>Candy.</li>
+<li>Gum.</li>
+<li>Booze.</li>
+</ul>
+<p>都会输出 HTML 为：</p>
+<ul><br><li>Candy.</li><br><li>Gum.</li><br><li>Booze.</li><br></ul>
+
+<p>有序的列表则是使用一般的数字接着一个英文句点作为项目标记：</p>
+<ol>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ol>
+<p>输出 HTML 为：</p>
+<ol><br><li>Red</li><br><li>Green</li><br><li>Blue</li><br></ol>
+
+<p>如果你在项目之间插入空行，那项目的内容会用 </p><p> 包起来，你也可以在一个项目内放上多个段落，只要在它前面缩排 4 个空白或 1 个 tab 。</p>
+<ul>
+<li><p>A list item.</p>
+<p>  With multiple paragraphs.</p>
+<ul>
+<li><p>Another item in the list.</p>
+<p>输出 HTML 为：</p>
+<ul><br><li><p>A list item.</p><br><p>With multiple paragraphs.</p></li><br><li><p>Another item in the list.</p></li><br></ul>
+
+<p>链接</p>
+<p>Markdown 支援两种形式的链接语法： 行内 和 参考 两种形式，两种都是使用角括号来把文字转成连结。</p>
+<p>行内形式是直接在后面用括号直接接上链接：</p>
+<p>This is an <a href="http://example.com/" target="_blank" rel="external">example link</a>.</p>
+<p>输出 HTML 为：</p>
+<p>This is an <a href="http://example.com/" target="_blank" rel="external"><br>example link</a>.</p>
+
+<p>你也可以选择性的加上 title 属性：</p>
+<p>This is an <a href="http://example.com/" title="With a Title" target="_blank" rel="external">example link</a>.</p>
+<p>输出 HTML 为：</p>
+<p>This is an <a href="http://example.com/" title="With a Title" target="_blank" rel="external"><br>example link</a>.</p>
+
+<p>参考形式的链接让你可以为链接定一个名称，之后你可以在文件的其他地方定义该链接的内容：</p>
+<p>I get 10 times more traffic from <a href="http://bruce-sha.github.io" target="_blank" rel="external">Google</a> than from<br><a href="http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png" target="_blank" rel="external">Yahoo</a> or [MSN][3].</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>[1]: http://google.com/ &quot;Google&quot;
+[2]: http://search.yahoo.com/ &quot;Yahoo Search&quot;
+[3]: http://search.msn.com/ &quot;MSN Search&quot;
+
+输出 HTML 为：
+
+&lt;p&gt;I get 10 times more traffic from &lt;a href=&quot;http://google.com/&quot;
+title=&quot;Google&quot;&gt;Google&lt;/a&gt; than from &lt;a href=&quot;http://search.yahoo.com/&quot;
+title=&quot;Yahoo Search&quot;&gt;Yahoo&lt;/a&gt; or &lt;a href=&quot;http://search.msn.com/&quot;
+title=&quot;MSN Search&quot;&gt;MSN&lt;/a&gt;.&lt;/p&gt;
+
+title 属性是选择性的，链接名称可以用字母、数字和空格，但是不分大小写：
+
+I start my morning with a cup of coffee and
+[The New York Times][NY Times].
+
+[ny times]: http://www.nytimes.com/
+
+输出 HTML 为：
+
+&lt;p&gt;I start my morning with a cup of coffee and
+&lt;a href=&quot;http://www.nytimes.com/&quot;&gt;The New York Times&lt;/a&gt;.&lt;/p&gt;
+
+图片
+
+图片的语法和链接很像。
+
+行内形式（title 是选择性的）：
+
+![alt text](/path/to/img.jpg &quot;Title&quot;)
+
+参考形式：
+
+![alt text][id]
+
+[id]: /path/to/img.jpg &quot;Title&quot;
+
+上面两种方法都会输出 HTML 为：
+
+&lt;img src=&quot;/path/to/img.jpg&quot; alt=&quot;alt text&quot; title=&quot;Title&quot; /&gt;
+
+代码
+
+在一般的段落文字中，你可以使用反引号 ` 来标记代码区段，区段内的 &amp;、&lt; 和 &gt; 都会被自动的转换成 HTML 实体，这项特性让你可以很容易的在代码区段内插入 HTML 码：
+
+I strongly recommend against using any `&lt;blink&gt;` tags.
+
+I wish SmartyPants used named entities like `&amp;mdash;`
+instead of decimal-encoded entites like `&amp;#8212;`.
+
+输出 HTML 为：
+
+&lt;p&gt;I strongly recommend against using any
+&lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+&lt;p&gt;I wish SmartyPants used named entities like
+&lt;code&gt;&amp;amp;mdash;&lt;/code&gt; instead of decimal-encoded
+entites like &lt;code&gt;&amp;amp;#8212;&lt;/code&gt;.&lt;/p&gt;
+
+如果要建立一个已经格式化好的代码区块，只要每行都缩进 4 个空格或是一个 tab 就可以了，而 &amp;、&lt; 和 &gt; 也一样会自动转成 HTML 实体。
+
+Markdown 语法:
+
+If you want your page to validate under XHTML 1.0 Strict,
+you&apos;ve got to put paragraph tags in your blockquotes:
+
+&lt;blockquote&gt;
+&lt;p&gt;For example.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+输出 HTML 为：
+
+&lt;p&gt;If you want your page to validate under XHTML 1.0 Strict,
+you&apos;ve got to put paragraph tags in your blockquotes:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;blockquote&amp;gt;
+&amp;lt;p&amp;gt;For example.&amp;lt;/p&amp;gt;
+&amp;lt;/blockquote&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/markdown/" rel="tag"># markdown</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/31/How-to-install-Hexo-in-Android-LinuxDeploy-Debian/" rel="prev" title="在Android/LinuxDeploy Debian上安装hexo的坑">
+                在Android/LinuxDeploy Debian上安装hexo的坑 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Xsu Albert" />
+          <p class="site-author-name" itemprop="name">Xsu Albert</p>
+           
+              <p class="site-description motion-element" itemprop="description">My own blog,records of my study and thoughts</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#星号与下划线都可以，单是斜体，双是粗体，符号可跨行，符号可加空格"><span class="nav-number">1.</span> <span class="nav-text">星号与下划线都可以，单是斜体，双是粗体，符号可跨行，符号可加空格</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#大标题"><span class="nav-number"></span> <span class="nav-text">大标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#小标题"><span class="nav-number">1.</span> <span class="nav-text">小标题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#四级标题"><span class="nav-number">1.1.1.</span> <span class="nav-text">四级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#五级标题"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">五级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">1.1.1.1.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#A-First-Level-Header"><span class="nav-number"></span> <span class="nav-text">A First Level Header</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#A-Second-Level-Header"><span class="nav-number">1.</span> <span class="nav-text">A Second Level Header</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Header-3"><span class="nav-number">1.1.</span> <span class="nav-text">Header 3</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#This-is-an-H2-in-a-blockquote"><span class="nav-number">2.</span> <span class="nav-text">This is an H2 in a blockquote</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number"></span> <span class="nav-text">A First Level Header</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">A Second Level Header</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">Header 3</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">This is an H2 in a blockquote</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xsu Albert</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
