@@ -231,3 +231,11 @@
 {"name":"hexo","hostname":"localhost","pid":3476,"level":20,"msg":"Generator: \u001b[35marchive\u001b[39m","time":"2017-08-05T18:05:58.880Z","v":0}
 {"name":"hexo","hostname":"localhost","pid":3476,"level":20,"msg":"Generator: \u001b[35mtag\u001b[39m","time":"2017-08-05T18:05:58.880Z","v":0}
 {"name":"hexo","hostname":"localhost","pid":3476,"level":20,"msg":"Generator: \u001b[35masset\u001b[39m","time":"2017-08-05T18:05:58.893Z","v":0}
+{"name":"hexo","hostname":"localhost","pid":3476,"level":20,"msg":"Generator: \u001b[35mpage\u001b[39m","time":"2017-08-05T18:06:26.321Z","v":0}
+{"name":"hexo","hostname":"localhost","pid":3476,"level":20,"msg":"Generator: \u001b[35mpost\u001b[39m","time":"2017-08-05T18:06:26.322Z","v":0}
+{"name":"hexo","hostname":"localhost","pid":3476,"level":20,"msg":"Generator: \u001b[35mindex\u001b[39m","time":"2017-08-05T18:06:26.323Z","v":0}
+{"name":"hexo","hostname":"localhost","pid":3476,"level":20,"msg":"Generator: \u001b[35mcategory\u001b[39m","time":"2017-08-05T18:06:26.323Z","v":0}
+{"name":"hexo","hostname":"localhost","pid":3476,"level":20,"msg":"Generator: \u001b[35marchive\u001b[39m","time":"2017-08-05T18:06:26.327Z","v":0}
+{"name":"hexo","hostname":"localhost","pid":3476,"level":20,"msg":"Generator: \u001b[35mtag\u001b[39m","time":"2017-08-05T18:06:26.328Z","v":0}
+{"name":"hexo","hostname":"localhost","pid":3476,"level":20,"msg":"Generator: \u001b[35masset\u001b[39m","time":"2017-08-05T18:06:26.335Z","v":0}
+{"name":"hexo","hostname":"localhost","pid":3476,"level":20,"msg":"Rendering index: \u001b[35mindex.html\u001b[39m","time":"2017-08-05T18:14:26.663Z","v":0}
